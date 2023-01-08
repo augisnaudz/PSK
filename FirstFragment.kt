@@ -22,6 +22,8 @@ class FirstFragment : Fragment() {
         balses = view.findViewById(R.id.vowel)
         skirtumas = view.findViewById(R.id.diff)
 
+// skirta gauti package'ui
+
         val bundle = arguments
         val message = bundle?.getString("7089")
         if (message != null) {
@@ -33,6 +35,8 @@ class FirstFragment : Fragment() {
         return view
     }
 
+//skirta skaiciuoti balses
+
     fun countVowels(str: String): Int {
         var count = 0
         for (char in str) {
@@ -42,6 +46,8 @@ class FirstFragment : Fragment() {
         }
         return count
     }
+
+/skirta skaiciuoti didžiąsias raides
 
     fun countBig(str: String): Int {
         var big = 0
@@ -53,6 +59,8 @@ class FirstFragment : Fragment() {
         }
         return big
     }
+
+//skirta skaičiuoti mažasias raides
 
     fun countSmol(str: String): Int{
         var smol = 0
